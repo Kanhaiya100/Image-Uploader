@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "build": "npm install --legacy-peer-deps && your-build-command"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
