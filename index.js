@@ -6,6 +6,7 @@ import { CloudinaryStorage } from 'multer-storage-cloudinary';
 import path from 'path';
 
 const app = express();
+ ;
 
 mongoose.connect(
   "mongodb+srv://07kanhaiya09_db_user:AF5IXcbzbOPsnluH@cluster0.yygkhys.mongodb.net/",
@@ -67,5 +68,5 @@ res.render("index.ejs",{url:cloudinaryRes.secure_url});
 
 
 app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+  console.log(`Server is running on port ${process.env.PORT} `);
 });
